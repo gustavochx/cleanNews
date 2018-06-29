@@ -14,6 +14,10 @@
 		193984CC20E57E4400D11CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 193984CB20E57E4400D11CC4 /* Assets.xcassets */; };
 		193984CF20E57E4400D11CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193984CD20E57E4400D11CC4 /* LaunchScreen.storyboard */; };
 		193984DA20E57E4400D11CC4 /* cleanNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193984D920E57E4400D11CC4 /* cleanNewsTests.swift */; };
+		196F5AD620E669FA00816274 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F5AD520E669FA00816274 /* APIClient.swift */; };
+		196F5AD820E66BAB00816274 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F5AD720E66BAB00816274 /* News.swift */; };
+		196F5ADA20E66BB400816274 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F5AD920E66BB400816274 /* Source.swift */; };
+		196F5ADC20E6747800816274 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F5ADB20E6747800816274 /* NewsResponse.swift */; };
 		7BC2014853BA8C1067A959F6 /* Pods_cleanNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8542E9F51B8D2E9B3DDD2A82 /* Pods_cleanNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,10 @@
 		193984D520E57E4400D11CC4 /* cleanNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cleanNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		193984D920E57E4400D11CC4 /* cleanNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleanNewsTests.swift; sourceTree = "<group>"; };
 		193984DB20E57E4400D11CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		196F5AD520E669FA00816274 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		196F5AD720E66BAB00816274 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		196F5AD920E66BB400816274 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		196F5ADB20E6747800816274 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
 		1AAAE10D8FE55AEEDB8FCCC9 /* Pods-cleanNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cleanNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cleanNewsTests/Pods-cleanNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		45EA641D52B1C4DC51C243FA /* Pods-cleanNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cleanNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-cleanNews/Pods-cleanNews.release.xcconfig"; sourceTree = "<group>"; };
 		62826B2CD94BC345ADAEF474 /* Pods-cleanNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cleanNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cleanNewsTests/Pods-cleanNewsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +108,9 @@
 		193984C320E57E4200D11CC4 /* cleanNews */ = {
 			isa = PBXGroup;
 			children = (
+				196F5AD220E669C200816274 /* presentation */,
+				196F5AD120E669BD00816274 /* domain */,
+				196F5AD020E669B600816274 /* data */,
 				193984C420E57E4200D11CC4 /* AppDelegate.swift */,
 				193984C620E57E4200D11CC4 /* ViewController.swift */,
 				193984C820E57E4200D11CC4 /* Main.storyboard */,
@@ -117,6 +128,47 @@
 				193984DB20E57E4400D11CC4 /* Info.plist */,
 			);
 			path = cleanNewsTests;
+			sourceTree = "<group>";
+		};
+		196F5AD020E669B600816274 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				196F5AD420E669ED00816274 /* API */,
+				196F5AD320E669E700816274 /* Entities */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		196F5AD120E669BD00816274 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		196F5AD220E669C200816274 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		196F5AD320E669E700816274 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				196F5AD720E66BAB00816274 /* News.swift */,
+				196F5AD920E66BB400816274 /* Source.swift */,
+				196F5ADB20E6747800816274 /* NewsResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		196F5AD420E669ED00816274 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				196F5AD520E669FA00816274 /* APIClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		82AB7EAD3BD35816618D6844 /* Frameworks */ = {
@@ -139,6 +191,7 @@
 				193984BD20E57E4200D11CC4 /* Sources */,
 				193984BE20E57E4200D11CC4 /* Frameworks */,
 				193984BF20E57E4200D11CC4 /* Resources */,
+				49D8ADFBAB1307C854A8937D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +280,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		49D8ADFBAB1307C854A8937D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cleanNews/Pods-cleanNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cleanNews/Pods-cleanNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		69CBBD0E8785AC698CB963B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +345,10 @@
 			files = (
 				193984C720E57E4200D11CC4 /* ViewController.swift in Sources */,
 				193984C520E57E4200D11CC4 /* AppDelegate.swift in Sources */,
+				196F5AD820E66BAB00816274 /* News.swift in Sources */,
+				196F5ADA20E66BB400816274 /* Source.swift in Sources */,
+				196F5AD620E669FA00816274 /* APIClient.swift in Sources */,
+				196F5ADC20E6747800816274 /* NewsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +509,9 @@
 			baseConfigurationReference = 867CBEB888AD04CF357813BF /* Pods-cleanNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HZUQ64PXB;
 				INFOPLIST_FILE = cleanNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,8 +530,9 @@
 			baseConfigurationReference = 45EA641D52B1C4DC51C243FA /* Pods-cleanNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HZUQ64PXB;
 				INFOPLIST_FILE = cleanNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +553,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HZUQ64PXB;
 				INFOPLIST_FILE = cleanNewsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,6 +575,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HZUQ64PXB;
 				INFOPLIST_FILE = cleanNewsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
