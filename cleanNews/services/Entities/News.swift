@@ -9,8 +9,8 @@
 import UIKit
 import ObjectMapper
 
-class News: NSObject {
-
+class News: NSObject, Mappable {
+    
     var source : Source?
     var author : String?
     var title : String?

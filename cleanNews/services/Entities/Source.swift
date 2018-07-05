@@ -9,7 +9,7 @@
 import UIKit
 import ObjectMapper
 
-class Source: NSObject {
+class Source: NSObject, Mappable {
     
     var id : String?
     var name : String?

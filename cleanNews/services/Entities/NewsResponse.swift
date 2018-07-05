@@ -9,8 +9,9 @@
 import UIKit
 import ObjectMapper
 
-class NewsResponse: NSObject {
+class NewsResponse: NSObject, Mappable {
 
+    var statusResponse : String?
     var totalResults : Int?
     var articles : [News]?
     
@@ -20,6 +21,7 @@ class NewsResponse: NSObject {
         
         totalResults <- map["totalResults"]
         articles <- map["articles"]
+        statusResponse <- map["status"]
         
     }
     
