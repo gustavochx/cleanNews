@@ -13,22 +13,18 @@ import UIKit
 
 // Lógica para transição de telas que o seu router deve direcionar
 @objc protocol ListNewsRouterLogic {
-    
     func routeTo(segue: UIStoryboardSegue?)
-
 }
 
 
 // Dados que você deseja passar nas segues
 protocol ListNewsPassInputs {
-    
     var dataStore: ListNewsDataStore? { get }
 }
 
 class ListNewsRouter: NSObject, ListNewsRouterLogic, ListNewsPassInputs  {
     weak var viewController : ListNewsViewController?
     var dataStore: ListNewsDataStore?
-    
     
     func routeTo(segue: UIStoryboardSegue?) {
         

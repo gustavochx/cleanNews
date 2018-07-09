@@ -80,6 +80,17 @@ class ListNewsViewController: UIViewController, ListNewsDisplayLogic {
 
 extension ListNewsViewController : UITableViewDelegate {
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+        
+        
+        
+    }
+    
+    
 }
 
 extension ListNewsViewController : UITableViewDataSource {
