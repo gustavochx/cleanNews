@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode9.4
 
 script:
-  - xcodebuild clean test -workspace cleanNews.xcworkspace -scheme 'cleanNewsTest' -sdk iphonesimulator build
+  - xcodebuild test -workspace cleanNews.xcworkspace -scheme 'cleanNewsTest' -destination "platform=iOS Simulator,name=iPhone 7" -sdk iphonesimulator11.0 CODE_SIGNING_REQUIRED=NO
